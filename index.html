@@ -18,7 +18,12 @@
 	<div class="container my-3">
 		<div class="row mb-3">
 			<div class="col-md-12">
-				<h1>What fruit do I like?</h1>
+				<section id="index-content"></section>
+			</div>
+		</div>
+		<div class="row mb-3">
+			<div class="col-md-12">
+				<h2>What fruit do I like?</h2>
 				<ul class="list-group">
 					<a class="list-group-item list-group-item-action" href="#apple">Apple</a>
 					<a class="list-group-item list-group-item-action" href="#orange">Orange</a>
@@ -29,7 +34,7 @@
 		<section id="upper-content"></section>
 		<div class="row mb-3">
 			<div class="col-md-12">
-				<h1>What musical instrument do I like?</h1>
+				<h2>What musical instrument do I like?</h2>
 				<ul class="list-group">
 					<a class="list-group-item list-group-item-action" href="#keyboard">Keyboard</a>
 					<a class="list-group-item list-group-item-action" href="#guitar">Guitar</a>
@@ -44,6 +49,7 @@
 
 		<script>
 			$(document).ready(function () {
+				$("#index-content").addHash("index", "content/index_content.html");
 				$("#upper-content").addHash("apple", "content/apple.html");
 				$("#upper-content").addHash("orange", "content/orange.html");
 				$("#upper-content").addHash("banana", "content/banana.html");
