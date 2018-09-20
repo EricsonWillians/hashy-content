@@ -9,6 +9,21 @@ $.fn.addHash = function (hash, contentURL) {
 }
 
 $.fn.watch = function () {
+
+    for (var insertionId in hashes) {
+        for (var hashAssociationIndex in hashes[insertionId]) {
+            var _hash = hashes[insertionId][hashAssociationIndex][0];
+            var contentURL = hashes[insertionId][hashAssociationIndex][1];
+            if (_hash === "index") {
+                if (location.hash === "") {
+                    window.location.hash = "#index";
+                } else if (location.hash === "#index") {
+                    $('#' + insertionId).load(contentURL).hide().fadeIn();
+                }
+            }
+        }
+    }
+
     $(window).on('hashchange', function () {
         for (var insertionId in hashes) {
             for (var hashAssociationIndex in hashes[insertionId]) {
@@ -20,4 +35,5 @@ $.fn.watch = function () {
             }
         }
     });
+    
 };
