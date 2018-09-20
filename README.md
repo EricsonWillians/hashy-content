@@ -18,6 +18,12 @@ $().watch();
 
 Clone this repository to see the demo.
 
+Note: If you add an index hash, that content will be loaded by default in case there's no hash on the URL:
+
+```
+$("#index-content").addHash("index", "content/index_content.html");
+```
+
 ### Installing
 
 Just download hashy-content.js and use it together with JQuery.
