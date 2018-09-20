@@ -1,6 +1,6 @@
 # hashy-content
 
-A JQuery plugin that allows you to load content easily through hashes.
+A straightforward JQuery plugin that allows you to load content easily through hashes.
 
 ### How does it work?
 
@@ -15,6 +15,8 @@ $("#lower-content").addHash("guitar", "content/guitar.html");
 $("#lower-content").addHash("bass", "content/bass.html");
 $().watch();
 ```
+
+Clone this repository to see the demo.
 
 ### Installing
 
