@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+	<meta name="description" content="hashy-content">
+	<meta name="author" content="Ericson Willians">
+
+	<title>#Hashy#Hashy#Hashy</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body class="body">
+	<div class="container my-3">
+		<div class="row mb-3">
+			<div class="col-md-12">
+				<h1>What fruit do I like?</h1>
+				<ul class="list-group">
+					<a class="list-group-item list-group-item-action" href="#apple">Apple</a>
+					<a class="list-group-item list-group-item-action" href="#orange">Orange</a>
+					<a class="list-group-item list-group-item-action" href="#banana">Banana</a>
+				</ul>
+			</div>
+		</div>
+		<section id="upper-content"></section>
+		<div class="row mb-3">
+			<div class="col-md-12">
+				<h1>What musical instrument do I like?</h1>
+				<ul class="list-group">
+					<a class="list-group-item list-group-item-action" href="#keyboard">Keyboard</a>
+					<a class="list-group-item list-group-item-action" href="#guitar">Guitar</a>
+					<a class="list-group-item list-group-item-action" href="#bass">Bass</a>
+				</ul>
+			</div>
+		</div>
+		<section id="lower-content"></section>
+
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/hashy-content.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				$("#upper-content").addHash("apple", "content/apple.html");
+				$("#upper-content").addHash("orange", "content/orange.html");
+				$("#upper-content").addHash("banana", "content/banana.html");
+				$("#lower-content").addHash("keyboard", "content/keyboard.html");
+				$("#lower-content").addHash("guitar", "content/guitar.html");
+				$("#lower-content").addHash("bass", "content/bass.html");
+				$().watch();
+			});
+		</script>
+</body>
+
+</html>
