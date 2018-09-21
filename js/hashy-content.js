@@ -18,7 +18,8 @@ $.fn.watch = function () {
                 if (location.hash === "") {
                     window.location.hash = "#index";
                 }
-            } else {
+            }
+            if (location.hash.includes(_hash)) {
                 $('#' + insertionId).load(contentURL).hide().fadeIn();
             }
         }
