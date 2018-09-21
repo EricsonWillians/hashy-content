@@ -17,9 +17,9 @@ $.fn.watch = function () {
             if (_hash === "index") {
                 if (location.hash === "") {
                     window.location.hash = "#index";
-                } else if (location.hash === "#index") {
-                    $('#' + insertionId).load(contentURL).hide().fadeIn();
                 }
+            } else {
+                $('#' + insertionId).load(contentURL).hide().fadeIn();
             }
         }
     }
